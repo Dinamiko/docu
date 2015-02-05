@@ -46,6 +46,7 @@ http://masonry.desandro.com
 https://github.com/desandro/imagesloaded
 
 == Changelog ==
-
+= 1.1 =
+* Fix a console error when masonry isn't loaded
 = 1.0 =
 * Initial release
