@@ -1,12 +1,14 @@
 jQuery(document).ready(function($) {
 
-	// masonry
+	if( jQuery().masonry ) {
 
-	var container = $('.items');
-		
-	container.imagesLoaded( function() {
-		container.masonry({"gutter": 20});		
-	});
+		var container = $('.items');
+			
+		container.imagesLoaded( function() {
+			container.masonry({"gutter": 20});		
+		});
+
+	} 
 
 	// show/hide docu-single-nav link texts based on window with
 

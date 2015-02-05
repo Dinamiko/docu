@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Docu
- * Version: 1.0
+ * Version: 1.1
  * Plugin URI: http://wp.dinamiko.com/demos/docu
  * Description: A simple Documentation Plugin
  * Author: Emili Castells
@@ -47,7 +47,7 @@ if ( ! class_exists( 'Docu' ) ) {
 
 		private function setup_constants() {
 
-			if ( ! defined( 'DOCU_VERSION' ) ) { define( 'DOCU_VERSION', '1.0' ); }
+			if ( ! defined( 'DOCU_VERSION' ) ) { define( 'DOCU_VERSION', '1.1' ); }
 			if ( ! defined( 'DOCU_PLUGIN_DIR' ) ) { define( 'DOCU_PLUGIN_DIR', plugin_dir_path( __FILE__ ) ); }
 			if ( ! defined( 'DOCU_PLUGIN_URL' ) ) { define( 'DOCUPLUGIN_URL', plugin_dir_url( __FILE__ ) ); }
 			if ( ! defined( 'DOCU_PLUGIN_FILE' ) ) { define( 'DOCU_PLUGIN_FILE', __FILE__ ); }			
@@ -69,11 +69,11 @@ if ( ! class_exists( 'Docu' ) ) {
 		}
 
 		public function __clone() {
-			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'docu' ), '1.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'docu' ), DOCU_VERSION );
 		}
 
 		public function __wakeup() {
-			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'docu' ), '1.0' );
+			_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'docu' ), DOCU_VERSION );
 		}
 
 	}
