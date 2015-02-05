@@ -9,7 +9,7 @@ add_action( 'admin_enqueue_scripts', 'docu_admin_enqueue_styles', 10, 1 );
 
 function docu_enqueue_styles () {
 
-	wp_enqueue_style( 'dashicons' );
+	//wp_enqueue_style( 'dashicons' );
 
 	wp_register_style( 'docu-frontend', plugins_url( 'docu/assets/css/frontend.css' ), array(), '1.0' );
 	wp_enqueue_style( 'docu-frontend' );
