@@ -24,7 +24,7 @@ function docu_setup_post_types() {
 	);
 
 	$docu_args = array(
-		'labels' 			=> apply_filters( 'docu_doc_post_type_labels', $docu_labels, 10, 1 ),
+		'labels' 			=> apply_filters( 'docu_doc_post_type_labels', $docu_labels ),
         'public'                => true,
         'menu_position'         => 5,
         'rewrite'               => array('slug' => 'doc'),
@@ -36,7 +36,7 @@ function docu_setup_post_types() {
         'menu_icon' => 'dashicons-format-aside'
 	);
 
-	register_post_type( 'doc', apply_filters( 'docu_doc_post_type_args', $docu_args, 10, 1 ) );	
+	register_post_type( 'doc', apply_filters( 'docu_doc_post_type_args', $docu_args ) );	
 
 }
 
@@ -111,7 +111,7 @@ function docu_setup_taxonomies() {
 		'show_admin_column' => true 
 	);
 
-	register_taxonomy( 'doc_category', array('doc'), apply_filters('docu_doc_category_args', $category_args, 10, 1) );
+	register_taxonomy( 'doc_category', array('doc'), apply_filters('docu_doc_category_args', $category_args ) );
 	register_taxonomy_for_object_type( 'doc_category', 'doc' );
 
 }

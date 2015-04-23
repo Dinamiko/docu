@@ -1,13 +1,13 @@
 <?php
 /*
  * Plugin Name: Docu
- * Version: 1.1
+ * Version: 1.2
  * Plugin URI: http://wp.dinamiko.com/demos/docu
  * Description: A simple Documentation Plugin
  * Author: Emili Castells
  * Author URI: http://www.dinamiko.com
  * Requires at least: 3.9
- * Tested up to: 4.1
+ * Tested up to: 4.1.2
  *
  * Text Domain: docu
  * Domain Path: /languages/
@@ -47,7 +47,7 @@ if ( ! class_exists( 'Docu' ) ) {
 
 		private function setup_constants() {
 
-			if ( ! defined( 'DOCU_VERSION' ) ) { define( 'DOCU_VERSION', '1.1' ); }
+			if ( ! defined( 'DOCU_VERSION' ) ) { define( 'DOCU_VERSION', '1.2' ); }
 			if ( ! defined( 'DOCU_PLUGIN_DIR' ) ) { define( 'DOCU_PLUGIN_DIR', plugin_dir_path( __FILE__ ) ); }
 			if ( ! defined( 'DOCU_PLUGIN_URL' ) ) { define( 'DOCUPLUGIN_URL', plugin_dir_url( __FILE__ ) ); }
 			if ( ! defined( 'DOCU_PLUGIN_FILE' ) ) { define( 'DOCU_PLUGIN_FILE', __FILE__ ); }			
@@ -59,7 +59,7 @@ if ( ! class_exists( 'Docu' ) ) {
 			require_once DOCU_PLUGIN_DIR . 'includes/post-types.php';
 			require_once DOCU_PLUGIN_DIR . 'includes/load-js-css.php';
 			require_once DOCU_PLUGIN_DIR . 'includes/docu-functions.php';			
-			require_once DOCU_PLUGIN_DIR . 'includes/class-gamajo-template-loader.php';
+			//require_once DOCU_PLUGIN_DIR . 'includes/class-gamajo-template-loader.php';
 			require_once DOCU_PLUGIN_DIR . 'includes/class-docu-template-loader.php';
 			require_once DOCU_PLUGIN_DIR . 'includes/shortcodes.php';
 			require_once DOCU_PLUGIN_DIR . 'includes/sortable/sortable.php';		

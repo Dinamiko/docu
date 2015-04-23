@@ -142,7 +142,7 @@ class Docu_Widget extends WP_Widget {
 						'walker'             => null
 					);
 
-					echo wp_list_categories( apply_filters( 'docu_list_categories_args', $cat_args, 10, 1 ) );
+					echo wp_list_categories( apply_filters( 'docu_list_categories_args', $cat_args ) );
 
 					echo '</ul>';
 

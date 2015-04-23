@@ -2,8 +2,8 @@
 Contributors: dinamiko
 Tags: documentation, docs, doc, documents, document
 Requires at least: 3.9
-Tested up to: 4.1
-Stable tag: 1.1
+Tested up to: 4.1.2
+Stable tag: 1.2
 
 A simple Documentation Plugin
 
@@ -46,6 +46,9 @@ http://masonry.desandro.com
 https://github.com/desandro/imagesloaded
 
 == Changelog ==
+= 1.2 =
+* Tested in WordPress 1.1.2 
+* Removed unnecessari parameters in apply_filters
 = 1.1 =
 * Fix a console error when masonry isn't loaded
 = 1.0 =
