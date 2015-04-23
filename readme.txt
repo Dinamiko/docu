@@ -9,12 +9,11 @@ A simple Documentation Plugin
 
 == Description ==
 
-Docu it's a simple but flexible documentation plugin that allows you to document your products with ease.
+Docu is a simple but flexible documentation plugin that allows you to document your products with ease.
 <a href="http://wp.dinamiko.com/demos/docu" target="_blank">Docu Demo and Documentation</a>
 
 = Features =
  
-* Create Categories and Docs the same way as you create Categories and Posts in WordPress
 * Order Doc Categories and Docs with drag and drop in the admin
 * Docu Sidebar Widget that displays a search form and a list of all categories
 * Flexible template system that allows template overrides in an upgrade safe way
@@ -47,7 +46,7 @@ https://github.com/desandro/imagesloaded
 
 == Changelog ==
 = 1.2 =
-* Tested in WordPress 1.1.2 
+* Tested in WordPress 4.1.2 
 * Removed unnecessari parameters in apply_filters
 = 1.1 =
 * Fix a console error when masonry isn't loaded
