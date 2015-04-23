@@ -19,7 +19,7 @@ function docu_shortcode( $atts, $content = null ) {
 
 	), $atts );
 
-	$template = new DOCU_Template_Loader;
+	$template = new Docu_Template_Loader;
 
 	ob_start();
 
