@@ -36,9 +36,7 @@ Installing "Docu" can be done either by searching for "Docu" via the "Plugins > 
 
 == Credits ==
 
-This plugin uses Gamajo-Template-Loader for template loading, thanks Gary :)
-https://github.com/GaryJones/Gamajo-Template-Loader
-Also, the creation of class-docu-template-loader.php was taken from a tutorial of pippinsplugins.com
+The creation of class-docu-template-loader.php was taken from a tutorial of pippinsplugins.com
 
 This plugin uses Masonry and imagesloaded
 http://masonry.desandro.com
