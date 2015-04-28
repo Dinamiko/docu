@@ -7,7 +7,7 @@
 <div class="docu-container">
 	<div class="docu-wrapper-search">
 		
-		<form action="<?php echo site_url('/');?>" method="post" id="search-doc">
+		<form action="<?php echo esc_url( site_url('/') );?>" method="post" id="search-doc">
 
 			<div class="docu-search-container">
 				<input type="text" name="s" placeholder="<?php _e( 'Search', 'docu' );?>"/>
