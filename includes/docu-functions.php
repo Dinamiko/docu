@@ -182,7 +182,17 @@ function docu_search_filter( $query ) {
 
   if( $query->is_search ) {
 
-    $search_post_type = get_query_var('docu_post_type');
+    // get docu_post_type value
+    if ( isset( $_POST['docu_post_type'] ) ) {
+
+      $search_post_type = $_POST['docu_post_type'];
+
+    } else {
+
+      return false;
+
+    }
+   
     $s = $query->get('s');
     
     if( empty( $s ) ) { return false; }
