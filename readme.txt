@@ -43,6 +43,8 @@ http://masonry.desandro.com
 https://github.com/desandro/imagesloaded
 
 == Changelog ==
+= 1.4 =
+* Docu search form now search only for doc post type  
 = 1.3 =
 * Dashicons enqueued in load-js-css.php 
 = 1.2 =
