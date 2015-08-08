@@ -2,8 +2,8 @@
 Contributors: dinamiko
 Tags: documentation, docs, doc, documents, document
 Requires at least: 3.9
-Tested up to: 4.2.2
-Stable tag: 1.3
+Tested up to: 4.2.4
+Stable tag: 1.4
 
 A simple Documentation Plugin
 
