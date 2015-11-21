@@ -133,15 +133,23 @@ function docu_cat_active( $output, $args ) {
 
     	$terms = get_the_terms( $post->ID, 'doc_category' );
 
-	    foreach( $terms as $term ) {
+    	if( $terms ) {
 
-	    	 if ( preg_match( '#cat-item-' . $term ->term_id . '#', $output ) ) {
+		    foreach( $terms as $term ) {
 
-	    	 	$output = str_replace('cat-item-'.$term->term_id, 'cat-item-'.$term->term_id . ' current-cat', $output);
+		    	 if ( preg_match( '#cat-item-' . $term ->term_id . '#', $output ) ) {
 
-	    	 }
+		    	 	$output = str_replace('cat-item-'.$term->term_id, 'cat-item-'.$term->term_id . ' current-cat', $output);
 
-	    }
+		    	 }
+
+		    }
+
+    	} else {
+
+    		$output = '';
+
+    	}
 
     }
 
