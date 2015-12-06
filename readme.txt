@@ -43,6 +43,8 @@ http://masonry.desandro.com
 https://github.com/desandro/imagesloaded
 
 == Changelog ==
+= 1.5 =
+* Removes errors when no term is found  
 = 1.4 =
 * Docu search form now search only for doc post type  
 = 1.3 =
