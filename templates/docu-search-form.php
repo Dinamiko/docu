@@ -13,6 +13,7 @@
 				<input type="text" name="s" placeholder="<?php _e( 'Search', 'docu' );?>"/>
 				<button id="docu-search-button" type="submit"/>
 				<input type="hidden" name="docu_post_type" value="doc" />
+				<input type="hidden" name="post_type" value="doc" />
 				<?php wp_nonce_field('docu_action','docu_nonce_field');?>
 			</div>
 
